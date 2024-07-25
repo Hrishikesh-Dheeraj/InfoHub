@@ -8,45 +8,47 @@
           <span class="circle circle3"></span>
           <span class="circle circle4"></span>
           <span class="circle circle5">
-           <h2>{{starCount}}</h2> 
+            <h2>{{ starCount }}</h2>
           </span>
-  
         </div>
         <div class="glass"></div>
         <div class="content">
-          <h4 class="title">GitHub Stars</h4>
-          <br>
+          <h4 class="title">GitHub Star</h4>
+          <br />
           <span class="title">Info-Hub</span>
-          <span class="text">We describe the latest technology in a way that is easy to understand and implement.</span>
+          <span class="text"
+            >We describe the latest technology in a way that is easy to
+            understand and implement.</span
+          >
         </div>
-        <div class="bottom">
-        </div>
+        <div class="bottom"></div>
       </div>
     </div>
   </div>
- <h3 style="color: white; margin-top: 5%;">Contributors:</h3>
+  <h3 style="color: white; margin-top: 5%">Contributors:</h3>
   <div *ngIf="contributors.length > 0">
-   
     <div>
       <span *ngFor="let contributor of contributors">
         <div class="profile-image">
-          <img [src]="contributor.avatar_url" alt="{{ contributor.login }}">
-          <a class="profile-info" [href]="contributor.html_url" target="_blank">{{ contributor.login }}</a>
+          <img [src]="contributor.avatar_url" alt="{{ contributor.login }}" />
+          <a
+            class="profile-info"
+            [href]="contributor.html_url"
+            target="_blank"
+            >{{ contributor.login }}</a
+          >
         </div>
       </span>
     </div>
   </div>
 </div>
 
-<br>
-<h3>
-  Resources:
-</h3>
+<br />
+<h3>Resources:</h3>
 <div class="resources">
-
   <div class="topics" (click)="onclickFrontEnd()">
-    <h3 >Front End</h3>
-    <h4 >→</h4>
+    <h3>Front End</h3>
+    <h4>→</h4>
   </div>
   <div class="topics">
     <h3>Front End</h3>
